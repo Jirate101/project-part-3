@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login (Salted)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Member Login</div>
+            <div class="card-subtitle">Sign in to view your account</div>
+        </div>
+
+        <!-- Optional messages (if you’re using GET params later) -->
+        <!-- <div class="message">Registered successfully</div>
+             <div class="error">Invalid credentials</div> -->
+
+        <form action="loginSalt.php" method="post">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="uName" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="pw" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Login</button>
+        </form>
+
+        <div class="btn-secondary-link">
+            New here? <a href="registerSalt.html">Create an account</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
